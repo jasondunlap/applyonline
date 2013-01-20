@@ -13,60 +13,7 @@
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/liiveinc/applyonline">View on GitHub</a>
-
-          <h1 id="project_title">Applyonline</h1>
-          <h2 id="project_tagline">Online Application</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/liiveinc/applyonline/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/liiveinc/applyonline/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <link rel="stylesheet" href="https://app.divshot.com/css/divshot-util.css">
-    <link rel="stylesheet" href="https://app.divshot.com/themes/spacelab/bootstrap.min.css">
-    <link rel="stylesheet" href="https://app.divshot.com/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="https://djyhxgczejc94.cloudfront.net/builds/7ef089af6b2dd1ce613b404cd25fc6abc163336c.css">
-    <script src="https://app.divshot.com/js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-    <script src="/js/jqBootstrapValidation.js"></script>
-    <script>
-  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-</script>
-   <link rel="stylesheet" href="js/prettyCheckable/prettyCheckable.css">
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-   <script src="js/prettyCheckable/prettyCheckable.js"></script>
-   <link rel="stylesheet/less" href="/path/to/bootstrap.less">
-   <script src="/path/to/less.js"></script>
-   <script src="http://code.jquery.com/jquery-latest.js"></script>
-   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-   <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="parsley.js"></script>
-
-<form data-validate="parsley">
-  [...]
-</form>
-
-  </head>
-  
-  <body>
-     <script src="bootbox.min.js"></script>
-     <script>
-        $(document).on("click", ".alert", function(e) {
-            bootbox.alert("Hello world!", function() {
-                console.log("Alert Callback");
-            });
-        });
-    </script>
-
-    <div class="container-fluid">
+   <div class="container-fluid">
       <h1>Applicant Vitals</h1>
       <div class="control-group pull-left">
         <label class="control-label">First Name</label>
@@ -132,13 +79,6 @@
           <input type="password" placeholder="XXX-XX-XXXX" class="input-large"> 
         </div>
       </div>
-      <div>
-        <p></p>
-        <div class="progress progress-striped active">
-          <div class="bar" style="width: 20%;"></div>
-        </div>
-        <p></p>
-      </div>
       <h1>Previous Education</h1>
       <div class="control-group">
         <label class="control-label">Highest Level of Education</label>
@@ -189,21 +129,61 @@
         <input type="radio">
         <span>Bachelor or Master Degree</span>
       </label>
-      <h1>Short Answer Questions</h1>
-      <h3>
-        <p class="p1">Please complete the following essays, please no longer than 200 words
-          each.</p>
-      </h3>
+      <h2>Please Select The Desired Program of Study</h2>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Film + Broadcast</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Recording Arts</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Game + Interactive Media</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Animation + Visual Effects</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Design + Visual Communication</span>
+      </label>
+      <div>
+        <p></p>
+        <div class="span4">25% Complete
+          <span class="pull-right">Almost Essay Time...</span>
+          <div class="progress progress-striped active">
+            <div class="bar" style="width: 25%;"></div>
+          </div>
+        </div>
+      </div>
+      <h1>
+        <div>
+          <br> 
+        </div>
+        <div>
+          <br> 
+        </div>
+        <div>Short Answer Questions
+          <br> 
+        </div>
+      </h1>
       <h4>
         <p class="p1">What aspects of your prior educational or personal experience have influenced
           your passion for digital entertainment?</p>
       </h4>
+      <h3>
+        <p class="p1">Please complete the following essays, please no longer than 200 words
+          each.</p>
+      </h3>
       <div class="control-group">
         <label class="control-label">
           <br> 
         </label>
         <div class="controls">
-          <textarea></textarea>
+          <textarea style="margin: 0px 0px 8.92593px; width: 934px; height: 233px; "></textarea>
         </div>
       </div>
       <h4>
@@ -313,52 +293,9 @@
       <div class="control-group">
         <label class="control-label">Please describe in detail. </label>
         <div class="controls">
-          <textarea style="margin: 0px 0px 10px; width: 920px; height: 125px; "></textarea>
+          <textarea style="margin: 0px 0px 8.92593px; height: 341px; width: 1087px; "></textarea>
         </div>
       </div>
-      <div class="control-group">
-        <label class="control-label">Label Text</label>
-        <div class="controls">
-          <input type="text" class="input-large"> 
-        </div>
-      </div>
-      <h1>Enter Your Title Text</h1>
-      <div class="control-group">
-        <label class="control-label">Label Text</label>
-        <div class="controls">
-          <select>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label">Label Text</label>
-        <div class="controls">
-          <select>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-        </div>
-      </div>
-      <label class="checkbox">
-        <input type="checkbox">
-        <span>Label goes here.</span>
-      </label>
-      <label class="radio">
-        <input type="radio">
-        <span>Label goes here.</span>
-      </label>
-      <label class="radio">
-        <input type="radio">
-        <span>Label goes here.</span>
-      </label>
-      <label class="radio">
-        <input type="radio">
-        <span>Label goes here.</span>
-      </label>
     </div>
     <form class="form-vertical">
       <h1>Letters of Recommendation
@@ -372,9 +309,39 @@
           Coach or Community Leader.  Letters from family members will not be
           accepted.</p>
       </h4>
-      <div></div>
       <div>
-        <p>You can edit this content.</p>
+        <p></p>
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+          <span class="btn btn-file">
+            <span class="fileupload-new">Select File</span>
+            <span class="fileupload-exists"></span>
+            <input type="file"> 
+          </span>
+          <span class="fileupload-preview"></span>
+          <a href="#" class="close fileupload-exists" data-dismiss="fileupload"
+          style="float: none">×</a> 
+        </div>
+        <p></p>
+      </div>
+      <div>
+        <p></p>
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+          <span class="btn btn-file">
+            <span class="fileupload-new">Select File</span>
+            <span class="fileupload-exists"></span>
+            <input type="file"> 
+          </span>
+          <span class="fileupload-preview"></span>
+          <a href="#" class="close fileupload-exists" data-dismiss="fileupload"
+          style="float: none">×</a> 
+        </div>
+        <p></p>
+      </div>
+      <div></div>
+      <div class="form-actions">
+        <button class="btn btn-large btn-primary btn-block" href="#">
+          <span class="btn-label">Submit </span>
+        </button>
       </div>
     </form>
     <script src="https://app.divshot.com/js/bootstrap.min.js"></script>
