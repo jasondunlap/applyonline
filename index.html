@@ -66,10 +66,133 @@
         });
     </script>
 
-   <div class="container-fluid">
+    <div class="container-fluid">
+      <h1>Applicant Vitals</h1>
+      <div class="control-group pull-left">
+        <label class="control-label">First Name</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group pull-left">
+        <label class="control-label">Middle Name</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Last Name</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Gender</label>
+        <div class="controls">
+          <select>
+            <option>Please Choose</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group pull-right">
+        <label class="control-label">State</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group pull-right">
+        <label class="control-label">City</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Mailing Address</label>
+        <div class="controls">
+          <textarea placeholder="Street Name and Number"></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Date of Birth</label>
+        <div class="controls">
+          <input type="email" placeholder="Month/Date/Year" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Email Address</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Social Security Number</label>
+        <div class="controls">
+          <input type="password" placeholder="XXX-XX-XXXX" class="input-large"> 
+        </div>
+      </div>
+      <div>
+        <p></p>
+        <div class="progress progress-striped active">
+          <div class="bar" style="width: 20%;"></div>
+        </div>
+        <p></p>
+      </div>
+      <h1>Previous Education</h1>
+      <div class="control-group">
+        <label class="control-label">Highest Level of Education</label>
+        <div class="controls">
+          <select>
+            <option>Please Choose</option>
+            <option>High School</option>
+            <option>College</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Name of Institution</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">City and State</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Year of Graduation</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <h5>Highest Level of Degree Received</h5>
+      <label class="radio">
+        <input type="radio">
+        <span>GED
+          <br> 
+        </span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span>High School Diploma
+          <br> 
+        </span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span>Associates Degree</span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span>Bachelor or Master Degree</span>
+      </label>
       <h1>Short Answer Questions</h1>
       <h3>
-        <p class="p1">Please upload or type the following essays. No longer than 200 words each.</p>
+        <p class="p1">Please complete the following essays, please no longer than 200 words
+          each.</p>
       </h3>
       <h4>
         <p class="p1">What aspects of your prior educational or personal experience have influenced
@@ -80,15 +203,8 @@
           <br> 
         </label>
         <div class="controls">
-          <textarea style="margin: 0px 0px 10px; width: 927px; height: 217px; "></textarea>
-          
+          <textarea></textarea>
         </div>
-            <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
-
       </div>
       <h4>
         <p class="p1">Choose a piece of entertainment you have either liked or disliked. 
@@ -100,12 +216,7 @@
         </label>
         <div class="controls">
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 218px; "></textarea>
-        </div>  
-            <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
+        </div>
       </div>
       <h4>
         <p class="p1">What aspects of your personality do you believe will help you succeed
@@ -118,16 +229,11 @@
         <div class="controls">
           <textarea style="margin: 0px 0px 10px; width: 931px; height: 164px; "></textarea>
         </div>
-            <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
       </div>
       <h4>
         <p class="p1">Pick a moment in your life you wish you could recreate as a film, song,
-          game or piece of art.  What was that moment? 
-          How would you recreate it and why?</p>
+          game or piece of art.  What was that moment? How would you recreate
+          it and why?</p>
       </h4>
       <div class="control-group">
         <label class="control-label">
@@ -136,11 +242,6 @@
         <div class="controls">
           <textarea style="margin: 0px 0px 10px; width: 933px; height: 209px; "></textarea>
         </div>
-            <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
       </div>
       <h4>
         <p class="p1">Poet T.S. Eliot described television as “a medium of entertainment, which
@@ -156,11 +257,6 @@
         <div class="controls">
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 315px; "></textarea>
         </div>
-            <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
       </div>
       <div class="form-actions">
         <h1>Essay Question</h1>
@@ -187,20 +283,6 @@
             <div class="controls">
               <textarea style="margin: 0px 0px 10px; width: 830px; height: 334px; "></textarea>
             </div>
-                <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
-<div id="static" class="modal hide fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
-  <div class="modal-body">
-    <p>Would you like to continue with some arbitrary task?</p>
-  </div>
-  <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Cancel</button>
-    <button type="button" data-dismiss="modal" class="btn btn-primary">Continue Task</button>
-  </div>
-</div>
           </div>
         </div>
         <h1>
@@ -212,13 +294,7 @@
           <p class="p2">Please describe in detail any past accolades and accomplishments.</p>
         </h4>
         <label class="checkbox">
-          <input type="checkbox"
-           maxchecked="2"
-             minchecked="2"
-  data-validation-minchecked-message="Choose two"
-  maxchecked="2"
-  data-validation-maxchecked-message=
-    "You can't have it all ways">
+          <input type="checkbox">
           <span>Educational</span>
         </label>
         <label class="checkbox">
@@ -240,6 +316,49 @@
           <textarea style="margin: 0px 0px 10px; width: 920px; height: 125px; "></textarea>
         </div>
       </div>
+      <div class="control-group">
+        <label class="control-label">Label Text</label>
+        <div class="controls">
+          <input type="text" class="input-large"> 
+        </div>
+      </div>
+      <h1>Enter Your Title Text</h1>
+      <div class="control-group">
+        <label class="control-label">Label Text</label>
+        <div class="controls">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Label Text</label>
+        <div class="controls">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Label goes here.</span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span>Label goes here.</span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span>Label goes here.</span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span>Label goes here.</span>
+      </label>
     </div>
     <form class="form-vertical">
       <h1>Letters of Recommendation
@@ -248,26 +367,17 @@
         </div>
       </h1>
       <h4>
-        <p class="p1">Please upload two letters of recommendation from a person of influence
+        <p class="p1">Please include two letters of recommendation from a person of influence
           such as, but not limited to:  Teacher/Counselor, Youth Pastor, Employer,
           Coach or Community Leader.  Letters from family members will not be
           accepted.</p>
-          
-          <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-</div>
-          <div class="fileupload fileupload-new" data-provides="fileupload">
-  <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists"></span><input type="file" /></span>
-  <span class="fileupload-preview"></span>
-  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-
-<button type="submit" class="btn btn-primary pull-right">Send</button>
-  
- 
-
-    
+      </h4>
+      <div></div>
+      <div>
+        <p>You can edit this content.</p>
+      </div>
+    </form>
+    <script src="https://app.divshot.com/js/bootstrap.min.js"></script>
   </body>
 
 </html>
