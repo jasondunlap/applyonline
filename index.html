@@ -373,6 +373,13 @@
           <span class="btn-label">Submit </span>
         </button>
       </div>
+      $(/*...*/).jqBootstrapValidation(
+  {
+    submitSuccess: function ($form, event) { 
+      /* ... */ 
+    }
+  }
+);
     </form>
     <script>
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
