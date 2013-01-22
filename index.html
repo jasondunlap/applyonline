@@ -14,7 +14,8 @@
     <script src="https://app.divshot.com/js/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="parsley.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
+    <script src="/js/jqBootstrapValidation.js"></script>
     <title>Apply Online Tribeca Flashpoint Academy</title>
   </head>
 
@@ -349,7 +350,13 @@
         </div>
         <p></p>
       </div>
-      <div></div>
+      <div><input 
+  type="checkbox" 
+  name="terms-and-conditions" 
+  required 
+  data-validation-required-message=
+    "You must agree to the terms and conditions"
+></div>
       <div class="form-actions">
         <button class="btn btn-large btn-primary btn-block" href="#">
           <span class="btn-label">Submit </span>
