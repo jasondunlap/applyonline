@@ -17,6 +17,8 @@
     <script type="text/javascript" src="parsley.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
     <script src="/js/jqBootstrapValidation.js"></script>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <script>
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 </script>
@@ -48,6 +50,7 @@
         <label class="control-label">First Name</label>
         <div class="controls">
           <input type="text" class="input-large" data-required="true"> 
+           <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
         </div>
       </div>
       <div class="control-group">
