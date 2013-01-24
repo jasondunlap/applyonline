@@ -22,7 +22,7 @@
 	
 	<div class="span8">
 		<div class="alert alert-success">
-		  Thank You for Applying at Tribeca Flashpoint Academy.If you accidentally close your browser, your        information will be saved.  
+		  Thank You for Applying at Tribeca Flashpoint Academy.If you accidentally close your browser, your information will be saved.  
 		</div>
 		<form class="form-horizontal" id="registerHere" method='post' action=''>
 			  <fieldset>
@@ -42,14 +42,19 @@
 
 			      </div>
 
-        <div class="control-group">
-        <label class="control-label"> for="input01">Gender</label>
-        <div class="controls">
-          <select name="gender" id="gender" >
-            <option value="male">Male</option>
-            <option> value="female">Female</option>
-          </select>
-        </div>
+        		 <div class="control-group">
+						<label class="control-label" for="input01">Gender</label>
+					      <div class="controls">
+					        <select name="gender" id="gender" >
+				            				<option value="">Gender</option>
+							                <option value="male">Male</option>
+							                <option value="female">Female</option>
+							<option value="other">Other</option>
+
+							              </select>
+
+					      </div>
+		
       </div>
       <div class="control-group">
         <label class="control-label">Mailing Address</label>
@@ -80,21 +85,16 @@
         <div class="controls">
           <input type="text" class="input-large"> 
         </div>
-      </div>
-    <input type="email" id="email" required>
-<input 
-  name="emailAgain"
-  data-validation-matches-match="email" 
-  data-validation-matches-message=
-    "Must match email address entered above" 
-      </div>
-      <div class="control-group">
+        <div class="control-group">
         <label class="control-label">Social Security Number</label>
         <div class="controls">
           <input type="password" placeholder="XXX-XX-XXXX" class="input-large"> 
         </div>
       </div>
-      <h1>Previous Education</h1>
+     	</div>
+		<form class="form-horizontal" id="registerHere" method='post' action=''>
+			  <fieldset>
+			    <legend>Previous Education</legend>
       <div class="control-group">
         <label class="control-label">Highest Level of Education</label>
         <div class="controls">
