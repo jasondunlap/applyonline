@@ -14,23 +14,35 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<!--[if lte IE 7]>
+	    <script src="https://raw.github.com/mattpowell/localstorageshim/master/localstorageshim.min.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="garlic.js"></script>
+	<script src="jquery.js">
+	<script src="garlic.js">
+	<script type="text/javascript">
+	  $( 'form' ).garlic();
+	</script>
 
   </head>
    <body>
-	 <div class="container-fluid">
+	 <div class="container">
 	 <div class="row">
 	
 	<div class="span8">
 		<div class="alert alert-success">
 		  Thank You for Applying at Tribeca Flashpoint Academy.If you accidentally close your browser, your information will be saved.  
 		</div>
-		<form class="form-horizontal" id="registerHere" method='post' action=''>
+		<form class="form-horizontal" id="registerHere" data-persist="garlic" method="POST" action=''>
+			<form data-persist="garlic" method="POST"> 
 			  <fieldset>
 			    <legend>Registration</legend>
 			    <div class="control-group">
 			      <label class="control-label" for="input01">Name</label>
 			      <div class="controls">
-			        <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
+			        <input type="text" class="input-large" id="user_name" name="user_name" rel="popover" data-content="Enter your first and last name." data-original-title="Full Name">
 
 			      </div>
 			</div>
@@ -38,30 +50,29 @@
 			 <div class="control-group">
 				<label class="control-label" for="input01">Email</label>
 			      <div class="controls">
-			        <input type="text" class="input-xlarge" id="user_email" name="user_email" rel="popover" data-content="What’s your email address?" data-original-title="Email">
+			        <input type="text" class="input-large" id="user_email" name="user_email">
 
 			      </div>
 
-        		 <div class="control-group">
-						<label class="control-label" for="input01">Gender</label>
-					      <div class="controls">
-					        <select name="gender" id="gender" >
-				            				<option value="">Gender</option>
-							                <option value="male">Male</option>
-							                <option value="female">Female</option>
-							<option value="other">Other</option>
-
-							              </select>
-
-					      </div>
+        	   <div class="control-group">
+			        <label class="control-label">Gender</label>
+			        <div class="controls">
+			          <select>
+			            <option>Please Choose</option>
+			            <option>Male</option>
+			            <option>Female</option>
+			          </select>
+			        </div>
+			      </div>
+			</div>
+		      <div class="control-group">
+		        <label class="control-label">Mailing Address</label>
+		        <div class="controls">
+		          <textarea placeholder="Street Name and Number"></textarea>
+		        </div>
+		      </div>
 		
-      </div>
-      <div class="control-group">
-        <label class="control-label">Mailing Address</label>
-        <div class="controls">
-          <textarea placeholder="Street Name and Number"></textarea>
-        </div>
-      </div>
+      
       <div class="control-group">
         <label class="control-label">City</label>
         <div class="controls">
@@ -85,20 +96,14 @@
         <div class="controls">
           <input type="text" class="input-large"> 
         </div>
-        <div class="control-group">
-        <label class="control-label">Social Security Number</label>
-        <div class="controls">
-          <input type="password" placeholder="XXX-XX-XXXX" class="input-large"> 
-        </div>
+      
       </div>
      	</div>
-		<form class="form-horizontal" id="registerHere" method='post' action=''>
-			  <fieldset>
-			    <legend>Previous Education</legend>
-      <div class="control-group">
-        <label class="control-label">Highest Level of Education</label>
-        <div class="controls">
-          <select>
+			  <legend>Previous Education</legend>
+             <div class="control-group">
+            <label class="control-label">Highest Level of Education</label>
+            <div class="controls">
+            <select>
             <option>Please Choose</option>
             <option>High School</option>
             <option>College</option>
@@ -123,7 +128,7 @@
           <input type="text" class="input-large"> 
         </div>
       </div>
-      <h5>Highest Level of Degree Received</h5>
+     <legend>Highest Level of Degree Received</legend>
       <label class="radio">
         <input type="radio">
         <span>GED
@@ -144,25 +149,25 @@
         <input type="radio">
         <span>Bachelor or Master Degree</span>
       </label>
-      <h2>Please Select The Desired Program of Study</h2>
-      <label class="checkbox">
-        <input type="checkbox">
+ <legend>Please Select the Desired Program of Study</legend>
+      <label class="radio">
+        <input type="radio">
         <span>Film + Broadcast</span>
       </label>
-      <label class="checkbox">
-        <input type="checkbox">
+      <label class="radio">
+        <input type="radio">
         <span>Recording Arts</span>
       </label>
-      <label class="checkbox">
-        <input type="checkbox">
+      <label class="radio">
+        <input type="radio">
         <span>Game + Interactive Media</span>
       </label>
-      <label class="checkbox">
-        <input type="checkbox">
+      <label class="radio">
+        <input type="radio">
         <span>Animation + Visual Effects</span>
       </label>
-      <label class="checkbox">
-        <input type="checkbox">
+      <label class="radio">
+        <input type="radio">
         <span>Design + Visual Communication</span>
       </label>
       <div class="pull-left">
@@ -174,25 +179,26 @@
           </div>
         </div>
       </div>
-      <h1>
+      
         <div>
           <br> 
         </div>
         <div>
           <br> 
         </div>
-        <div>Short Answer Questions
-          <br> 
+        <div><legend>Short Answer Questions</legend>
+    
         </div>
-      </h1>
-      <h4>
-        <p class="p1">What aspects of your prior educational or personal experience have influenced
-          your passion for digital entertainment?</p>
-      </h4>
-      <h3>
-        <p class="p1">Please complete the following essays, please no longer than 200 words
-          each.</p>
-      </h3>
+
+      </legend>
+      <legend>
+        <class="control-label">What aspects of your prior educational or personal experience have influenced
+          your passion for digital entertainment?
+      </legend>
+      <legend>
+        <class="p1">Please complete the following essays, please no longer than 200 words
+          each.>
+      </legend>
       <div class="control-group">
         <label class="control-label">
           <br> 
@@ -201,10 +207,10 @@
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 218px; "></textarea>
         </div>
       </div>
-      <h4>
+      <legend>
         <p class="p1">Choose a piece of entertainment you have either liked or disliked. 
           Explain why. </p>
-      </h4>
+      </legend>
       <div class="control-group">
         <label class="control-label">
           <br> 
@@ -213,10 +219,10 @@
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 218px; "></textarea>
         </div>
       </div>
-      <h4>
+      <legend>
         <p class="p1">What aspects of your personality do you believe will help you succeed
           in the digital entertainment industry?</p>
-      </h4>
+      </legend>
       <div class="control-group">
         <label class="control-label">
           <br> 
@@ -225,11 +231,11 @@
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 218px; "></textarea>
         </div>
       </div>
-      <h4>
+      <legend>
         <p class="p1">Pick a moment in your life you wish you could recreate as a film, song,
           game or piece of art.  What was that moment? How would you recreate
           it and why?</p>
-      </h4>
+      </legend>
       <div class="control-group">
         <label class="control-label">
           <br> 
@@ -238,13 +244,13 @@
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 218px; "></textarea>
         </div>
       </div>
-      <h4>
+      <legend>
         <p class="p1">Poet T.S. Eliot described television as “a medium of entertainment, which
           permits millions of people to listen to the same joke at the same time,
           and yet remain lonesome.”  Do you agree or disagree?  Why? 
           How would you describe today’s digital entertainment landscape and how
           does it change or affect his statement?</p>
-      </h4>
+      </legend>
       <div class="control-group">
         <label class="control-label">
           <br> 
@@ -253,23 +259,23 @@
           <textarea style="margin: 0px 0px 10px; width: 932px; height: 218px; "></textarea>
         </div>
       </div>
-      <div class="form-actions">
-        <h1>Essay Question</h1>
-        <h3>
+      <div class="control-group">
+        <legend>Essay Question</legend>
+        <legend>
           <p class="p1">For your application to be complete, please finish the following question
             (approximately 250-400 words).</p>
-        </h3>
-        <h1>
+        </legend>
+        <legend>
           <br> 
-        </h1>
-        <h4>
+        </legend>
+        <legend>
           <p class="p1">Describe an experience in your life that caused you to grow up or change
             suddenly; or relate an incident that introduced you to a side of life or
             humanity that you had not confronted before (i.e. poverty, wealth, racism,
             violence, altruism, etc.).  Explain your attitude before the incident
             and how it changed as a result of the experience.  What new understanding
             or appreciation did you have based on the incident?</p>
-        </h4>
+        </legend>
         <div class="well">
           <div class="control-group">
             <label class="control-label">
@@ -280,14 +286,14 @@
             </div>
           </div>
         </div>
-        <h1>
-          <p class="p1">Scholarship Information</p>
-        </h1>
-        <h4>
-          <p class="p1">Tribeca Flashpoint Academy has a limited number of scholarships available. 
+        <legend>
+          <p class="">Scholarship Information</p>
+        </legend>
+        <legend>
+          <p class="">Tribeca Flashpoint Academy has a limited number of scholarships available. 
             To qualify, please complete the following items:  </p>
-          <p class="p2">Please describe in detail any past accolades and accomplishments.</p>
-        </h4>
+          <p class="">Please describe in detail any past accolades and accomplishments.</p>
+        </legend>
         <label class="checkbox">
           <input type="checkbox">
           <span>Educational</span>
@@ -313,22 +319,22 @@
       </div>
     </div>
     <form class="form-vertical">
-      <h1>Letters of Recommendation
+      <legend>Letters of Recommendation
         <div>
           <br> 
         </div>
-      </h1>
-      <h4>
-        <p class="p1">Please include two letters of recommendation from a person of influence
+      </legend>
+      <legend>
+        <p class="">Please include two letters of recommendation from a person of influence
           such as, but not limited to:  Teacher/Counselor, Youth Pastor, Employer,
           Coach or Community Leader.  Letters from family members will not be
           accepted.</p>
           <div class="alert alert-block alert-info">
      <a class="close" data-dismiss="alert" href="#">X</a>
-     <h4 class="alert-heading">Reminder</h4>
+     <legend class="alert-info"></legend>
      Letters of Recommendation are not required to submit your application now. However, if you are accepted you will need to mail them in two weeks prior to orientation. 
 </div>
-      </h4>
+      </legend>
       <div>
         <p></p>
         <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -357,21 +363,13 @@
         </div>
         <p></p>
       </div>
-      <p>
-      <input 
-         type="checkbox" 
-         name="terms-and-conditions" 
-         required 
-         data-validation-required-message=
-         "You must agree to the terms and conditions"
-        >     
-        </p>
+     
   
 </div>
      <div class="control-group">
 			<label class="control-label" for="input01"></label>
 		      <div class="controls">
-		       <button type="submit" class="btn btn-success" rel="tooltip" title="first tooltip">Create My Account</button>
+		       <button type="submit" class="btn btn-success" rel="tooltip" title="first tooltip">Submit My Application</button>
 
 		      </div>
 
@@ -380,16 +378,16 @@
 
 
 		  </fieldset>
-		</form>
+		</form> 
 		</div>
 
 			</div>
 
 
-	          </div><!--/row-->
+	         </div><!--/row-->
 	        </div><!--/span-->
 	      </div><!--/row-->
-
+			 
 	      <hr>
 
 	      <footer>
@@ -403,6 +401,7 @@
 	    <!-- Le javascript
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
+	
 	    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
 	    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
 	    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
